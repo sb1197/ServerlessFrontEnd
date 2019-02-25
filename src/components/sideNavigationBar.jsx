@@ -8,8 +8,6 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-// import NotesIcon from '@material-ui/icons/lightbulb_outline';
-import MailIcon from '@material-ui/icons/Mail';
 import { IconButton, Tooltip } from '@material-ui/core';
 
 const styles = theme => ({
@@ -19,8 +17,8 @@ const styles = theme => ({
   hide: {
     display: 'none',
   },
-  drawerPaper: {
-    width: "240px",
+  drawerPaper: { 
+    width: "250px",
     top: "65px"
   },
   drawerHeader: {
@@ -41,7 +39,7 @@ class PersistentDrawerLeft extends React.Component {
   };
 
   render() {
-    const { classes, theme } = this.props;
+    const { classes } = this.props;
     const { open } = this.state;
 
     return (
@@ -72,7 +70,7 @@ class PersistentDrawerLeft extends React.Component {
           <List>
             {['Notes', 'Reminders'].map((text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <img src={require('../assets/images/bulb.svg')} /> : <img src={require('../assets/images/reminders.svg')} />}</ListItemIcon>
+                <ListItemIcon>{index % 2 === 0 ? <img src={require('../assets/images/bulb.svg')} alt = "" /> : <img src={require('../assets/images/reminders.svg')} alt = "" />}</ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
             ))}
@@ -81,7 +79,7 @@ class PersistentDrawerLeft extends React.Component {
           <List>
             {['Edit Labels'].map((text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <img src={require('../assets/images/editLabel.svg')} /> : ""}</ListItemIcon>
+                <ListItemIcon>{index % 2 === 0 ? <img src={require('../assets/images/editLabel.svg')} alt = "" /> : ""}</ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
             ))}
@@ -90,7 +88,7 @@ class PersistentDrawerLeft extends React.Component {
           <List>
             {['Archive', 'Trash'].map((text, index) => (
               <ListItem button key={text}>
-                <ListItemIcon>{index % 2 === 0 ? <img src={require('../assets/images/archive.svg')} /> : <img src={require('../assets/images/trash.svg')} />}</ListItemIcon>
+                <ListItemIcon>{index % 2 === 0 ? <img src={require('../assets/images/archive.svg')} alt = "" /> : <img src={require('../assets/images/trash.svg')} alt = "" />}</ListItemIcon>
                 <ListItemText primary={text} />
               </ListItem>
             ))}

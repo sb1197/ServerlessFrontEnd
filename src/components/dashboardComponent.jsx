@@ -73,7 +73,7 @@ class DashboardComponent extends Component {
                                 </div>
                                 <div style={{ display: "flex", justifyContent: "space-between" }}>
                                     <div id="keepImage">
-                                        <img src={require('/home/bridgeit/Shweta/fundooNotes/frontend/src/assets/images/keep.png')} alt="keep icon" />
+                                        <img src={require('../assets/images/keep.png')} alt="keep icon" />
                                     </div>
                                     <span className="title"><b>fundooNotes</b></span>
                                 </div>
@@ -98,21 +98,21 @@ class DashboardComponent extends Component {
                                 <div style={{ marginLeft: "15px" }}>
                                     <IconButton onClick={this.handleRefresh}>
                                         <Tooltip title="Refresh" >
-                                            <img src={require('/home/bridgeit/Shweta/fundooNotes/frontend/src/assets/images/refresh.svg')} alt="refresh icon" />
+                                            <img src={require('../assets/images/refresh.svg')} alt="refresh icon" />
                                         </Tooltip>
                                     </IconButton>
                                 </div>
                                 <div>
                                     <IconButton>
                                         <Tooltip title="Grid View" >
-                                            <img src={require('/home/bridgeit/Shweta/fundooNotes/frontend/src/assets/images/listView.svg')} alt="refresh icon" />
+                                            <img src={require('../assets/images/listView.svg')} alt="refresh icon" />
                                         </Tooltip>
                                     </IconButton>
                                 </div>
                                 <div>
                                     <IconButton>
                                         <Tooltip title="Settings" >
-                                            <img src={require('/home/bridgeit/Shweta/fundooNotes/frontend/src/assets/images/setting.svg')} alt="refresh icon" />
+                                            <img src={require('../assets/images/setting.svg')} alt="refresh icon" />
                                         </Tooltip>
                                     </IconButton>
                                 </div>
@@ -121,7 +121,7 @@ class DashboardComponent extends Component {
                                     <div>
                                         <IconButton>
                                             <Tooltip title="Google apps" >
-                                                <img src={require('/home/bridgeit/Shweta/fundooNotes/frontend/src/assets/images/baseline-apps-24px.svg')} alt="refresh icon" />
+                                                <img src={require('../assets/images/baseline-apps-24px.svg')} alt="refresh icon" />
                                             </Tooltip>
                                         </IconButton>
                                     </div>
@@ -129,7 +129,7 @@ class DashboardComponent extends Component {
                                     <div>
                                         <IconButton>
                                             <Tooltip title="Notifications" style={{ width: "25px" }} >
-                                                <img src={require('/home/bridgeit/Shweta/fundooNotes/frontend/src/assets/images/notify.jpg')} alt="refresh icon" />
+                                                <img src={require('../assets/images/notify.jpg')} alt="refresh icon" />
                                             </Tooltip>
                                         </IconButton>
                                     </div>

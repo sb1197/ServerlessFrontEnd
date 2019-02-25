@@ -22,7 +22,7 @@
     "eject": "react-scripts eject",
     "coverage": "react-scripts test --env=jsdom --coverage"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "https://4pnr7j9868.execute-api.us-west-2.amazonaws.com/serverless/users",
   "eslintConfig": {
     "extends": "react-app"
   },

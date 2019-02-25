@@ -8,12 +8,12 @@ import axios from 'axios';
  *               save the user details to the database and generate token for confirming useremail
  */
 function userRegister(fname, lname, username, password) {
-    axios.post('/registration',
+    axios.post('https://4pnr7j9868.execute-api.us-west-2.amazonaws.com/serverless/users/create',
         {
             firstName: fname,
             lastName: lname,
-            email: username,
-            password: password
+            userEmail: username,
+            userPassword: password
         })
         .then(function (response) {
             // console.log("response after register", response.data);
@@ -53,12 +53,13 @@ function checkToken(token) {
  * @description This method is posted after the user email verification is done
  */
 function userLogin(username, password) {
-    axios.post('/login',
+    axios.post('https://4pnr7j9868.execute-api.us-west-2.amazonaws.com/serverless/users/login',
         {
-            email: username,
-            password: password
+            userEmail: username,
+            userPassword: password
         })
         .then(function (response) {
+            console.log("response in services at front====",response)
             localStorage.setItem('token', response.data.token);
             localStorage.setItem('username', username);
             window.location.href = 'dashboard'
